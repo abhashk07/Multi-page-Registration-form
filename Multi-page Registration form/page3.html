@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-page Registration form</title>
+    <link rel="stylesheet" href="page3.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Upload Documents</h2>
+        <div class="form-container">
+            <form id="form" action="">
+                <div class="input-name">
+                    <label for="photograph">Recent Passport Size Photograph <span class="required">*</span></label>
+                    <input type="file" name="photograph" id="photo" required  onchange="Filevalidation()">
+                    <span id="text"></span>
+                    (Image size less then 4MB)
+                </div>
+
+
+                <div class="input-name">
+                    <label for="hscMark">HSC Mark Sheet <span class="required">*</span></label>
+                    <input type="file" name="hscMark" id="hscMark" required onchange="Filevalidations()">
+                    <span id="text-1"></span>
+                    (Image, PDF or Docs size less then 4MB)
+                </div>
+
+
+                <div class="input-name">
+                    <label for="sscMark">SSC Mark Sheet <span class="required">*</span></label>
+                    <input type="file" name="sscMark" id="sscMark" required onchange="Filevalidate()">
+                    <span id="text-1"></span>
+                    (Image, PDF or Docs size less then 4MB)
+                </div>
+
+
+                <div class="input-name">
+                    <label for="semestersMark">All Semesters Mark Sheet in Single PDF or Docs <span class="required">*</span></label>
+                    <input type="file" name="semestersMark" id="semestersMark" required onchange="Filevalide()">
+                    <span id="text-1"></span>
+                    (File size less then 10MB)
+                </div>
+
+                <div class="input-name">
+                    <input type="submit" value="Submit" class="button" onclick="saveFile()">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+   <script src="page3.js"></script>
+</html>

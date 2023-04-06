@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-page Registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <div class="form-container">
+            <form id="form" action=""  >
+                <div class="input-name">
+                    <label for="fname">Name <span class="required">*</span></label>
+                    <input type="text" name="fname" id="firstName" required placeholder="First"  class="name" onkeyup="white(this.value)">
+                    <input type="text" name="fname" id="lastName" required placeholder="Last" class="name" onkeyup="white(this.value)">
+                </div>
+
+                <div class="input-name">
+                    <label for="dob">Date of Birth <span class="required">*</span></label>
+                    <input type="date" name="dob" id="date_fo_birth" required class="b-name">
+                </div>
+
+                <div class="input-name">
+                    <label for="email">Email <span class="required">*</span></label>
+                    <input type="email" name="femail" id="email" required class="b-name" placeholder="Enter Email" onmousemove="validation()">
+                    <span id="showMsg"></span>
+                </div>
+
+                <div class="input-name">
+                    <label for="fname">Father's Name <span class="required">*</span></label>
+                    <input type="text" name="fname" id="fFirstName" required placeholder="First" class="name" onkeyup="white(this.value)">
+                    <input type="text" name="fname" id="fLastName" required placeholder="Last" class="name" onkeyup="white(this.value)">
+                </div>
+
+                <div class="input-name">
+                    <label for="mname">Mother's Name <span class="required">*</span></label>
+                    <input type="text" name="mname" id="mFirstName" required placeholder="First" class="name" onkeyup="white(this.value)">
+                    <input type="text" name="mname" id="mLastName" required placeholder="Last" class="name" onkeyup="white(this.value)">
+                </div>
+
+                <div class="input-name">
+                    <label for="gender">Gender <span class="required">*</span></label>
+                    <input type="radio" name="gender" id="gender" class="radio-button" >M
+                    <br>
+                    <input type="radio" name="gender" id="" class="radio-button">F
+                </div>
+
+                <div class="input-name">
+                    <label for="nationality">Nationality <span class="required">*</span></label>
+                    <input type="text" name="nationality" id="it_nationality" required class="b-name" onkeyup="white(this.value)">
+                </div>
+
+                <div class="input-name">
+                    <label for="address">Home Address <span class="required">*</span></label>
+                    <input type="text" name="address" id="add" required placeholder="Street Address" class="b-name box" onkeyup="white(this.value)">
+                    <br>
+                    <input type="text" name="address" id="city" required placeholder="City" class="name" onkeyup="white(this.value)">
+                    <select name="country" id="it_country" class="country">
+                        <option class="first" value="country">select a Country</option>
+                        <option value="Afghanistan">Afghanistan</option>
+                        <option value="Albania">Albania</option>
+                        <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                        <option value="Azerbaijan">Azerbaijan</option>
+                        <option value="Belarus">Belarus</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Cuba">Cuba</option>
+                        <option value="Denmark">Denmark</option>
+                        <option value="Dominica">Dominica</option>
+                        <option value="Equatorial Guinea">Equatorial Guinea</option>
+                        <option value="Egypt">Egypt</option>
+                        <option value="Finland">Finland</option>
+                        <option value="France">France</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Honduras">Honduras</option>
+                        <option value="India">India</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Kenya">Kenya</option>
+                        <option value="Switzerland">Switzerland</option>
+                    </select>
+                    <div class="arrow"></div>
+                </div>
+
+                <div class="input-name">
+                    <label for="tphone">Telephone - Home</label>
+                    <input type="number" name="tphone" id="number" placeholder="### ### ####" class="b-name"  onmousemove="validationNumaber()">
+                    <span id="text"></span>
+                </div>
+
+
+                <div class="input-name">
+                    <label for="mphone">Telephone - Mobile <span class="required">*</span></label>
+                    <input type="number" name="mphone" id="numbers" placeholder="### ### ####" required class="b-name" onmousemove="validationNumabers()">
+                    <span id="texts"></span>
+                </div>
+
+                <error id="alert-caps"></error>
+
+                <div class="input-name">
+                    <input type="submit" value="Submit" class="button" onclick="saveFile()">
+                </div>
+            </form>
+
+                <div class="input-name">
+                    <a href="page2.html">
+                    <input type="submit" value="Next" class="button" >
+                </a>
+            </div>
+            
+        </div>
+    </div>
+    <script src="page1.js"></script>
+</body>
+
+   
+</html>
